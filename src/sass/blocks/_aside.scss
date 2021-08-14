@@ -1,15 +1,21 @@
 .aside {
+	margin-top: 16px;
 	&__form {
 		padding: 24px;
 		background: #fffefb;
 		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
 		border-radius: 4px;
 		max-width: 332px;
+		&:hover {
+			border: 1px solid $green-color;
+			transition: .2s all;
+		}
 	}
 	&__input {
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 16px;
+
 	}
 	&__label {
 		font-size: 10px;
@@ -31,6 +37,8 @@
 		}
 	}
 }
+
+
 
 .label {
 	&_1 span::after {
@@ -78,11 +86,15 @@ textarea {
 		color: #b4b4b4;
 	}
 }
+input:focus, textarea:focus {
+	border: 2px solid $green-color;
+	transition: .1s all;
+}
 
 .btn {
 	width: 284px;
 	height: 36px;
-	background: #eeeeee;
+	background: $green-color;
 	border-radius: 10px;
 	font-family: Inter;
 	font-style: normal;
@@ -91,5 +103,9 @@ textarea {
 	line-height: 15px;
 	text-align: center;
 	letter-spacing: -0.02em;
-	color: #b4b4b4;
+	color: #FFFFFF;
+	&:hover {
+    background-color: #619b58;
+		transition: .4s all;
+  }
 }
