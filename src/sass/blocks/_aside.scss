@@ -1,0 +1,95 @@
+.aside {
+	&__form {
+		padding: 24px;
+		background: #fffefb;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+		border-radius: 4px;
+		max-width: 332px;
+	}
+	&__input {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 16px;
+	}
+	&__label {
+		font-size: 10px;
+		line-height: 13px;
+		letter-spacing: -0.02em;
+		color: #49485e;
+		padding-bottom: 4px;
+		span {
+			&:after {
+				position: relative;
+				content: "";
+				display: block;
+				width: 4px;
+				height: 4px;
+				background: #ff8484;
+				border-radius: 4px;
+				bottom: 13px;
+			}
+		}
+	}
+}
+
+.label {
+	&_1 span::after {
+		left: 96px;
+	}
+	&_2 span {
+		line-height: 17px;
+		&::after {
+			display: none;
+		}
+	}
+	&_3 span::after {
+		left: 135px;
+	}
+	&_4 span::after {
+		left: 55px;
+	}
+}
+
+input {
+	background: #fffefb;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	width: 284px;
+	height: 36px;
+	font-size: 12px;
+	line-height: 15px;
+	padding-left: 16px;
+	&::placeholder {
+		color: #b4b4b4;
+	}
+}
+
+textarea {
+	width: 284px;
+	height: 108px;
+	padding: 10px 0 0 16px;
+	resize: none;
+	background: #fffefb;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	&::placeholder {
+		font-size: 12px;
+		line-height: 15px;
+		color: #b4b4b4;
+	}
+}
+
+.btn {
+	width: 284px;
+	height: 36px;
+	background: #eeeeee;
+	border-radius: 10px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #b4b4b4;
+}
