@@ -1,5 +1,166 @@
-// @media (max-width: 1200px) {
-// 	// .catalog {
-		
-// 	// }
-// }
+@media (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+	.header {
+		margin: 0 5px;
+		&__link:hover {
+			color: #b4b4b4;
+		}
+	}
+	.hamburger {
+		display: block;
+		width: 50px;
+		position: absolute;
+		left: 260px;
+		bottom: 3px;
+		cursor: pointer;
+		span {
+			display: block;
+			height: 4px;
+			width: 100%;
+			margin-bottom: 5px;
+			background-color: $green-color;
+		}
+	}
+	.wrap {
+		justify-content: center;
+	}
+	.aside {
+		&__label {
+			font-size: 14px;
+		}
+		&__btn {
+			width: 300px;
+			height: 50px;
+			font-size: 16px;
+			&:hover {
+				background-color: $green-color;
+			}
+		}
+		&__form {
+			padding: 20px;
+			padding-top: 50px;
+			position: fixed;
+			top: -100%;
+			left: 0;
+			max-width: 768px;
+			width: 100%;
+			height: 100vh;
+			z-index: 10;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.7s;
+			&:hover {
+				border: none;
+			}
+			&.active {
+				top: 0px;
+				visibility: visible;
+				opacity: 0.97;
+				background-color: $bg-color;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+	.form__close {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		span {
+			display: block;
+			width: 40px;
+			height: 7px;
+			margin-bottom: 5px;
+			background-color: $green-color;
+			&:first-child {
+				transform: translateY(17px) rotate(45deg);
+			}
+			&:last-child {
+				transform: translateY(5px) rotate(-45deg);
+			}
+		}
+	}
+
+	.label {
+		&_1 span::after {
+			left: 135px;
+		}
+		&_3 span::after {
+			left: 189px;
+		}
+		&_4 span::after {
+			left: 75px;
+		}
+	}
+
+	input {
+		width: 300px;
+		font-size: 16px;
+	}
+	textarea {
+		width: 300px;
+		font-size: 16px;
+	}
+	input:focus,
+	textarea:focus {
+		border: none;
+	}
+
+	.main {
+		padding-left: 0;
+		&__catalog {
+			justify-content: center;
+		}
+	}
+	.card {
+		margin: 5px;
+	}
+}
+
+@media (max-width: 576px) {
+	.header {
+		margin: 0;
+		padding-top: 16px;
+		&__title {
+			font-size: 25px;
+		}
+		&__link {
+			position: absolute;
+			top: 60px;
+		}
+	}
+	.hamburger {
+		position: static;
+		width: 45px;
+	}
+	.main {
+		margin-top: 55px;
+	}
+	.card {
+		margin: 5px;
+		max-width: 300px;
+		&__image {
+			max-width: 300px;
+		}
+		&__header {
+			font-size: 18px;
+		}
+		&__price {
+			font-size: 22px;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.form {
+		padding-top: 30px;
+	}
+}

@@ -2,8 +2,9 @@
 	padding-top: 32px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	position: relative;
 	&__title {
-		// font-style: normal;
 		font-weight: 600;
 		font-size: 28px;
 		line-height: 35px;
@@ -18,5 +19,9 @@
 		background: #fffefb;
 		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
+		&:hover {
+			color: $green-color;
+			transition: .2s all;
+		}
 	}
 }

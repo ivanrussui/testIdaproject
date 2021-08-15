@@ -1,35 +1,21 @@
 @import "libs/mynormalize";
 @import "base/variables";
+@import "base/animations";
 
 * {
 	font-family: "Source Sans Pro", sans-serif;
 }
-// body {
-// 	color: $bg-color;
-// }
+body.lock {
+	overflow: hidden;
+}
 .container {
 	padding: 0 32px;
-	color: $bg-color;
+	background-color: $bg-color;
 	position: relative;
 }
 .wrap {
 	display: flex;
 	flex-direction: row;
-	// justify-content: center;
-	// align-items: center;
-	// display: grid;
-
-	// grid-template-columns: 2;
-	// grid-template-rows: repeat(5, 423px);
-
-	// grid-template: repeat(2, 432px ) / repeat(2, 358px);
-	// grid-template: repeat(auto, 432px) / repeat(2, 358px);
-	// display: flex; // flex-direction: column;
-	// flex-direction: column;
-	// flex-direction: row
-	// grid-auto-columns: repeat(auto-fit, 332px);
-	// align-items: flex-start;
-	// justify-content: flex-end;
 }
 
 @import "blocks/header";
